@@ -1,0 +1,28 @@
+/* App.css */
+
+/* Ensure the map view fills the screen and is at the base layer */
+.leaflet-container {
+    height: 100vh;
+    width: 100%;
+    z-index: 100; /* Lower z-index since it should be below the sidebar */
+    position: relative; /* z-index works on positioned elements */
+  }
+  
+  /* Style for the button that toggles the sidebar */
+  .sidebar-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 200; /* Higher than the map so it's clickable */
+  }
+  
+  /* Style for the sidebar component */
+  .sidebar {
+    position: fixed; /* Fixed or absolute position */
+    top: 0;
+    left: 0;
+    z-index: 300; /* Highest z-index to ensure the sidebar is above the map and toggle button */
+    /* Other styling for the sidebar */
+  }
+  
+

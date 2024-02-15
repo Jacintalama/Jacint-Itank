@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "epanet-js": "^0.7.0"
+  }
+}
